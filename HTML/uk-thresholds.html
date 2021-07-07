@@ -1,0 +1,118 @@
+<div style="height: 500px"></div>
+  <div class="bacc__page-container">
+    <div class="bacc__page-container__inner-container pos-r">
+      <section class="bacc__inner-container__section flex flex-column">
+        <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">Roth IRA Thresholds<br> & Traditional IRA Thresholds</h2>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">We have compiled the thresholds for contributions to Roth IRA and Traditional IRA pension plans.<br><br> This will offer an insight to which ivestment plan may work better for you. See our article <strong>on the topic</strong> alongside our Roth IRA vs Traditional IRA calculator for a more visual representation between the two and their growth over time. </p>
+        </div>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column">
+        <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">Roth IRA Thresholds</h2>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Below are the thresholds for Roth IRA contributions. <br><br> We have included the threshold for previous tax years so you can see a visual representation of how these thresholds change yearly.</p>
+        </div>
+        <label class='bacc__input-label text-upper'>Tax year:</label>
+        <div id="bacc__select-container" class="mgb-20">
+          <div id="bacc__container">
+            <select id="taxYear" class="roth select-box">
+              <option value="21-22">2021/2022</option>
+              <option value="20-21">2020/2021</option>
+            </select>
+          </div>
+        </div> 
+        <div class="threshold-table roth-thresholds">
+          
+        </div>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column">
+        <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">Traditional IRA Threshold</h2>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Traditional IRA Contributions are not limited by your MAGI. This means that anyone with an earned income is eligable to make contributions to a Traditional IRA <br><br>
+          The caviate to Traditional IRAs is as your MAGI increases beyond specific thresholds this will decrease the amount you can deduct against your tax<br><br>
+          We have included the threshold for previous tax years so you can see a visual representation of how these thresholds change yearly.</p>
+        </div>
+        <label class='bacc__input-label text-upper'>Tax year:</label>
+        <div id="bacc__select-container" class="mgb-20">
+          <div id="bacc__container">
+            <select id="taxYear" class="trad select-box">
+              <option value="21-22">2021/2022</option>
+              <option value="20-21">2020/2021</option>
+            </select>
+          </div>
+        </div> 
+        <div class="threshold-table trad-thresholds">
+        
+        </div>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column">
+        <div class="section__heading mgb-20">
+          <h3 class="heading-text text-upper">Traditional IRA Threshold (Married Filing Seperately)</h3>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Regarding married filing seperately there are two thresholds displayed below:</p>
+        </div>
+        <div class="threshold-table trad-marriage-seperate">
+          <table>
+            <thead>
+              <tr class="heading-container">
+                <th class="table-heading">Modified Adjusted Income</th>
+                <th class="table-heading">Allowable Deduction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-data-row">
+                <td>under $10,000</td>
+                <td>Partial deduction based on MAGI</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>$10,000 or over</td>
+                <td>No deduction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <aside class="bacc__link-widget">
+        <div class="link-widget__inner-container pos-r">
+          <div class="link-widget__heading">
+          <h3 class="text-upper mgb-20">Relevant Posts</h3>
+          </div>
+          <div class="link-widget__relevant-posts">
+            <div class="post-item flex mgb-20">
+              <a href="#" class="link-widget__img-link">
+                <div class="post-item__image">
+                  <img src="/img/calc-img@2x.png" alt="Calculator" class="post-img">
+                </div>
+              </a>
+              <div class="post-item__text">
+                <a href="#" class="link-widget__post-link"><span class="accent-color">Calculator</span>: <br>Roth IRA vs Traditional IRA</a>
+              </div>
+            </div>
+            <div class="post-item flex">
+              <a href="#" class="link-widget__img-link">
+                <div class="post-item__image">
+                  <img src="/img/article.png" alt="Calculator" class="post-img">
+                </div>
+              </a>
+              <div class="post-item__text">
+                <a href="#" class="link-widget__post-link"><span class="accent-color">Article</span>:<br> How do IRA's work?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+  <div style="height: 500px"></div>
+  <script src="/src/roth-trad-thresholds.js"></script>
+  <script src="/src/roth-trad-threshold-ui.js"></script>
+  <script src="/src/roth-trad-threshold-app.js"></script>
+</body>
+</html>

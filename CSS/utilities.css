@@ -1,0 +1,30 @@
+#tax-year-select__container:focus-within {
+  border-color: #ba9f2a;
+}
+
+#taxYear:focus-within {
+  outline: none !important;
+}
+
+#taxYear {
+  width: 100%;
+  height: 35px;
+  font-size: 1rem;
+  border: none;
+}
+
+#taxYear:hover {
+  cursor: pointer;
+}
+
+#bacc__select-container {
+  border: #000 1px solid;
+  height: 37px;
+  padding: 0 10px;
+  width: 200px
+}
+
+.bacc__input-label {
+  line-height: 1.5rem;
+  font-size: .8rem;
+}
