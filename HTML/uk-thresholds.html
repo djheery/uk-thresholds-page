@@ -1,85 +1,284 @@
-<div style="height: 500px"></div>
-  <div class="bacc__page-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/core.css">
+  <link rel="stylesheet" href="/CSS/link-widget.css">
+  <link rel="stylesheet" href="/CSS/table.css">
+  <link rel="stylesheet" href="/CSS/utilities.css">
+  <title>Document</title>
+</head>
+  <div class="bacc__page-container pos-r">
     <div class="bacc__page-container__inner-container pos-r">
       <section class="bacc__inner-container__section flex flex-column">
-        <div class="section__heading mgb-20">
-          <h2 class="heading-text text-upper">Roth IRA Thresholds<br> & Traditional IRA Thresholds</h2>
+        <!-- <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">UK Tax Key Dates and Deadlines</h2><br>
         </div>
         <div class="section__sub-heading mgb-20">
-          <p class="sub-heading-text">We have compiled the thresholds for contributions to Roth IRA and Traditional IRA pension plans.<br><br> This will offer an insight to which ivestment plan may work better for you. See our article <strong>on the topic</strong> alongside our Roth IRA vs Traditional IRA calculator for a more visual representation between the two and their growth over time. </p>
+          <p class="sub-heading-text">We have compiled all</p>
+        </div> -->
+        <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">UK Tax Thresholds</h2>
         </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">We have compiled the various thresholds and rates for UK tax. This page serves as a suplementary resource to our articles as well as a comprehensive overview of UK tax rates and thresholds.
+          The thresholds on this page are:
+        </div>
+          <ul>
+            <li><a class="bacc__link" href="#engwalni">England, Wales & NI Income Tax Rates</a></li>
+            <li><a class="bacc__link" href="#scotland">Scotland Income Tax Thresholds</a></li>
+            <li><a class="bacc__link" href="#dividend">Tax on Dividends</a></li>
+            <li><a class="bacc__link" href="#ma">Marriage Allowance</a></li>
+            <li><a class="bacc__link" href="#pgtr">Payroll Giving Tax Relief</a></li>
+          </ul>
       </section>
-      <section class="bacc__inner-container__section flex flex-column">
+      <section class="bacc__inner-container__section flex flex-column" id="engwalni">
         <div class="section__heading mgb-20">
-          <h2 class="heading-text text-upper">Roth IRA Thresholds</h2>
+          <h2 class="heading-text text-upper">England, Wales & NI Income Tax Thresholds</h2>
         </div>
         <div class="section__sub-heading mgb-20">
-          <p class="sub-heading-text">Below are the thresholds for Roth IRA contributions. <br><br> We have included the threshold for previous tax years so you can see a visual representation of how these thresholds change yearly.</p>
+          <p class="sub-heading-text">Tax is paid on the amount of taxable income remaining after allowances have been deducted.</p>
         </div>
         <label class='bacc__input-label text-upper'>Tax year:</label>
         <div id="bacc__select-container" class="mgb-20">
           <div id="bacc__container">
-            <select id="taxYear" class="roth select-box">
+            <select id="taxYear" class="eng-income-tax select-box">
               <option value="21-22">2021/2022</option>
               <option value="20-21">2020/2021</option>
+              <option value="19-20">2019/2020</option>
+              <option value="18-19">2018/2019</option>
+              <option value="17-18">2017/2018</option>
+              <option value="16-17">2016/2017</option>
             </select>
           </div>
         </div> 
-        <div class="threshold-table roth-thresholds">
+        <div class="threshold-table eng-tax-thresholds">
+          
+        </div>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column" id="scotland">
+        <div class="section__heading mgb-20">
+          <h2 class="heading-text text-upper">Scotland Income Tax Thresholds</h2>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Below are the thresholds for a Scottish nationals income tax and their appropriate tax rates.</p>
+        </div>
+        <label class='bacc__input-label text-upper'>Tax year:</label>
+        <div id="bacc__select-container" class="mgb-20">
+          <div id="bacc__container">
+            <select id="taxYear" class="scot-income-tax select-box">
+              <option value="21-22">2021/2022</option>
+              <option value="20-21">2020/2021</option>
+              <option value="19-20">2019/2020</option>
+              <option value="18-19">2018/2019</option>
+              <option value="17-18">2017/2018</option>
+              <option value="16-17">2016/2017</option>
+            </select>
+          </div>
+        </div> 
+        <div class="threshold-table scot-tax-thresholds">
           
         </div>
       </section>
       <section class="bacc__inner-container__section flex flex-column">
         <div class="section__heading mgb-20">
-          <h2 class="heading-text text-upper">Traditional IRA Threshold</h2>
+          <h3 class="heading-text text-upper">Tax on Dividends</h3>
         </div>
         <div class="section__sub-heading mgb-20">
-          <p class="sub-heading-text">Traditional IRA Contributions are not limited by your MAGI. This means that anyone with an earned income is eligable to make contributions to a Traditional IRA <br><br>
-          The caviate to Traditional IRAs is as your MAGI increases beyond specific thresholds this will decrease the amount you can deduct against your tax<br><br>
-          We have included the threshold for previous tax years so you can see a visual representation of how these thresholds change yearly.</p>
+          <p class="sub-heading-text">You can earn some dividend income each year without paying tax.
+            <br><br>
+            You do not pay tax on any dividend income that falls within your Personal Allowance (the amount of income you can earn each year without paying tax).
+            <br><br>
+            You also get a dividend allowance each year. You only pay tax on any dividend income above the dividend allowance.</p>
         </div>
         <label class='bacc__input-label text-upper'>Tax year:</label>
         <div id="bacc__select-container" class="mgb-20">
           <div id="bacc__container">
-            <select id="taxYear" class="trad select-box">
+            <select id="taxYear" class="dividends-thresholds select-box">
               <option value="21-22">2021/2022</option>
               <option value="20-21">2020/2021</option>
+              <option value="19-20">2019/2020</option>
+              <option value="18-19">2018/2019</option>
+              <option value="17-18">2017/2018</option>
+              <option value="16-17">2016/2017</option>
             </select>
           </div>
         </div> 
-        <div class="threshold-table trad-thresholds">
-        
+        <div class="threshold-table dividend-threshold-table">
+          
         </div>
       </section>
-      <section class="bacc__inner-container__section flex flex-column">
+      <section class="bacc__inner-container__section flex flex-column" id="dividend">
         <div class="section__heading mgb-20">
-          <h3 class="heading-text text-upper">Traditional IRA Threshold (Married Filing Seperately)</h3>
+          <h3 class="heading-text text-upper">Working out tax on dividends</h3><br>
         </div>
         <div class="section__sub-heading mgb-20">
-          <p class="sub-heading-text">Regarding married filing seperately there are two thresholds displayed below:</p>
+          <p class="sub-heading-text">How much tax you pay on dividends above the dividend allowance depends on your Income Tax band. <br><br>
+
+            To work out your tax band, add your total dividend income to your other income. You may pay tax at more than one rate.<br><br>
+
+            See <a href="#engwalni"><u>table</u></a> above.
         </div>
-        <div class="threshold-table trad-marriage-seperate">
+        <div class="threshold-table dividend-marriage-seperate">
           <table>
             <thead>
               <tr class="heading-container">
-                <th class="table-heading">Modified Adjusted Income</th>
-                <th class="table-heading">Allowable Deduction</th>
+                <th class="table-heading">Tax band</th>
+                <th class="table-heading">Tax rate on dividends over the allowance</th>
               </tr>
             </thead>
             <tbody>
               <tr class="table-data-row">
-                <td>under $10,000</td>
-                <td>Partial deduction based on MAGI</td>
+                <td>Basic rate</td>
+                <td>7.5%</td>
               </tr>
               <tr class="table-data-row">
-                <td>$10,000 or over</td>
-                <td>No deduction</td>
+                <td>Higher rate</td>
+                <td>32.5%</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Additional rate</td>
+                <td>38.1%</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
-      <aside class="bacc__link-widget">
+      <section class="bacc__inner-container__section flex flex-column">
+        <div class="section__heading mgb-20">
+          <h3 class="heading-text text-upper">Tax on dividends before 6 April 2016</h3><br>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">The table below displays the dividend tax rates from 6 April 2010 to 5 April 2016. <br><br>
+
+            How much tax you pay on dividends above the dividend allowance depends on your Income Tax band.<br><br>
+
+            Again, see <a href="#engwalni"><u>table</u></a> above and filter the appropriate tax year.
+        </div>
+        <div class="threshold-table dividend-marriage-seperate">
+          <table>
+            <thead>
+              <tr class="heading-container">
+                <th class="table-heading">Tax band</th>
+                <th class="table-heading">Effective dividend tax rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-data-row">
+                <td>Basic rate (and non taxpayers)</td>
+                <td>7.5%</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Higher rate</td>
+                <td>32.5%</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Additional rate (from 6 April 2013)</td>
+                <td>38.1%</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Additional rate (dividends paid before April 2013)</td>
+                <td>42.5%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column" id="ma">
+        <div class="section__heading mgb-20">
+          <h3 class="heading-text text-upper" style="line-height: 1.9rem">Marriage Allowance
+          </h3><br>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Marriage allowance allows the lesser earning partner to transfer a portion of their personal allowance across to the higher earning partner.<br><br>
+          The maximum amount transferable in 2021/2022 is £1,260</p>
+          <br>
+          <ul>
+            <li>You are married or in a civil partnership</li>
+            <li>The lesser earning partner does not pay Income Tax or their income is below their Personal Allowance (View the <a href="#engwalni" class="bacc__link">income tax thresholds</a> for the appropriate tax year above)</li>
+            <li>The higher earning partner pays income tax at the basic rate in the UK. In Scotland the higher earner must pay the starter, basic or intermediate rate of tax.</li>
+          </ul>
+        </div>
+        <p class="sub-heading-text">For more on Marriage Allowance visit the <a href="https://www.gov.uk/marriage-allowance" class="bacc__link">Government Website</a></p>
+      </section>
+      <section class="bacc__inner-container__section flex flex-column" id="pgtr">
+        <div class="section__heading mgb-20">
+          <h3 class="heading-text text-upper" style="line-height: 1.9rem">Payroll Giving Tax Relief
+          </h3><br>
+        </div>
+        <div class="section__sub-heading mgb-20">
+          <p class="sub-heading-text">Payroll Giving allows you to donate a portion of your PAYE income to charity allowing you a marginal tax relief on the amount donated<br><br>The tax relief you get depends on your taxation threshold and your geographical location within the United Kingdom</p>
+        </div>
+        <div class="section__heading">
+          <p class="" style="line-height: 1.9rem">England, Wales and Northern Ireland:
+          </p><br>
+        </div>
+        <div class="threshold-table dividend-marriage-seperate mgb-20">
+          <table>
+            <thead>
+              <tr class="heading-container">
+                <th class="table-heading">Tax band</th>
+                <th class="table-heading">Tax owed after £1 Donation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-data-row">
+                <td>Basic rate</td>
+                <td>80p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Higher Rate</td>
+                <td>60p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Additional rate</td>
+                <td>55p</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section__heading mgb-20">
+          <p>Scotland:
+          </p>
+        </div>
+        <div class="threshold-table dividend-marriage-seperate">
+          <table>
+            <thead>
+              <tr class="heading-container">
+                <th class="table-heading">Tax band</th>
+                <th class="table-heading">Tax owed after £1 Donation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-data-row">
+                <td>Starter Rate</td>
+                <td>81p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Basic Rate</td>
+                <td>80p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Intermediate Rate</td>
+                <td>79p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Higher Rate</td>
+                <td>59p</td>
+              </tr>
+              <tr class="table-data-row">
+                <td>Additional Rate</td>
+                <td>54p</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <aside class="bacc__link-widget-container pos-r">
+      <div class="bacc__link-widget">
         <div class="link-widget__inner-container pos-r">
           <div class="link-widget__heading">
           <h3 class="text-upper mgb-20">Relevant Posts</h3>
@@ -92,7 +291,7 @@
                 </div>
               </a>
               <div class="post-item__text">
-                <a href="#" class="link-widget__post-link"><span class="accent-color">Calculator</span>: <br>Roth IRA vs Traditional IRA</a>
+                <a href="#" class="link-widget__post-link"><span class="accent-color">Calculator</span>: <br>Income Tax Calculator</a>
               </div>
             </div>
             <div class="post-item flex">
@@ -102,17 +301,16 @@
                 </div>
               </a>
               <div class="post-item__text">
-                <a href="#" class="link-widget__post-link"><span class="accent-color">Article</span>:<br> How do IRA's work?</a>
+                <a href="#" class="link-widget__post-link"><span class="accent-color">Article</span>:<br> Mortgage Calculator</a>
               </div>
             </div>
           </div>
         </div>
-      </aside>
-    </div>
+      </div>
+    </aside>
   </div>
-  <div style="height: 500px"></div>
-  <script src="/src/roth-trad-thresholds.js"></script>
-  <script src="/src/roth-trad-threshold-ui.js"></script>
-  <script src="/src/roth-trad-threshold-app.js"></script>
+  <script src="/s/uk-thresholds-datactrl.js"></script>
+  <script src="/s/uk-thresholds-ui.js"></script>
+  <script src="/s/uk-thresholds-app.js"></script>
 </body>
 </html>

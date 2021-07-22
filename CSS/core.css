@@ -51,6 +51,15 @@ a {
   font-weight: 700;
 }
 
+.bacc__link {
+  color: #ba992f
+}
+
+.bacc__link:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
 .pos-r {
   position: relative;
 }

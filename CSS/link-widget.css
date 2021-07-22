@@ -3,7 +3,16 @@
 }
 
  @media only screen and (min-width: 1044px) {
-
+  .bacc__page-container {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+  }
+  .bacc__link-widget-container {
+    position: relative;
+    height: 100%;
+    width: 27%;
+  }
   .bacc__link-widget {
     line-height: 1.5;
     display: block;

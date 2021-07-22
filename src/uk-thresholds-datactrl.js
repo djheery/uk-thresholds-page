@@ -1,6 +1,7 @@
 const UKThresholdsDataCtrl = (() => {
   const twentyOneTwo = {
-    personalAlowance :{
+    year: [2021, 2022],
+    personalAllowance :{
       t: 12570,
       p: 0,
     },
@@ -27,7 +28,7 @@ const UKThresholdsDataCtrl = (() => {
     },
     engWalNi: {
       basicRate: {
-        t: [12500, 50270],
+        t: [12570, 50270],
         p: 20
       },
       highRate: {
@@ -37,10 +38,17 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }
+    },
+    dividends: 2000,
+    stampDuty: [
+      {price: 250000, rate: 'Zero'},
+      {price: 925000, rate: 5},
+      {price: 1.5, rate: 12},
+    ]
   }
   const twentyTwentyOne = {
-    personalAlowance :{
+    year: [2020, 2021],
+    personalAllowance :{
       t: 12500,
       p: 0,
     },
@@ -77,10 +85,17 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }
+    },
+    dividends: 2000,
+    stampDuty: [
+      {price: 500000, rate: 'Zero'},
+      {price: 925000, rate: 5},
+      {price: 1.5, rate: 12},
+    ]
   }
   const nighteenTwenty = {
-    personalAlowance :{
+    year: [2019, 2020],
+    personalAllowance :{
       t: 12500,
       p: 0,
     },
@@ -117,10 +132,17 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }    
+    },
+    dividends: 2000,
+    stampDuty: [
+      {price: 125000, rate: 'Zero'},
+      {price: 250000, rate: 2},
+      {price: 1.5, rate: 12},
+    ]    
   }
   const eighteenNighteen = {
-    personalAlowance :{
+    year: [2018, 2019],
+    personalAllowance :{
       t: 11850,
       p: 0,
     },
@@ -157,11 +179,12 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }
-    
+    },
+    dividends: 2000
   }
   const seventeenEighteen = {
-    personalAlowance :{
+    year: [2017, 2018],
+    personalAllowance :{
       t: 11500,
       p: 0,
     },
@@ -190,11 +213,13 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }
+    },
+    dividends: 5000
     
   }
   const sixteenSeventeen = {
-    personalAlowance :{
+    year: [2016, 2017],
+    personalAllowance :{
       t: 11500,
       p: 0,
     },
@@ -223,7 +248,8 @@ const UKThresholdsDataCtrl = (() => {
       additional: {
       p: 45
       }
-    }
+    },
+    dividends: 5000
     
   }
   return {
