@@ -2,11 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 :root {
   --bacc-accent-clr: #A58861;
   --bacc-dark-bg: #191A18;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, h2, a, li, td, th, h3 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .border-bottom {
